@@ -1,10 +1,10 @@
 package hw;
 
+
 public class fizzBuzz {
 
     public static void fizzBuzz(int n) {
         for (int i = 1; i <= n; i++) {
-            boolean fb = false;
             if ((i % 3 == 0) && (i % 5 == 0)) {
                 System.out.println("fizzbuzz");
             } else if (i % 3 == 0) {
