@@ -7,10 +7,12 @@ public class Main {
     public static void main(String[] args) {
         Scanner myInput = new Scanner(System.in);
 
-        System.out.println("Enter sequence number: ");
-        int number = myInput.nextInt();
+        int number = 0;
 
-        fizzBuzz.fizzBuzz(number);
+        System.out.println("Enter sequence number: ");
+        number = myInput.nextInt();
+
+        fizzBuzzArray.FizzBuzz3(number);
 
     }
 }
