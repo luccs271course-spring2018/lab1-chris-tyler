@@ -22,7 +22,10 @@ public class fizzBuzzArray {
                     array[i - 1] = String.valueOf(i);
                 }
             }
+
+            //Serves only purpose of showing that the values are actually getting into the array
             System.out.println(Arrays.toString(array));
+
             return array;
 
         } else {

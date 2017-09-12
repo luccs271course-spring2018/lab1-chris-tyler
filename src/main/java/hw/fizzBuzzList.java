@@ -14,16 +14,23 @@ public class fizzBuzzList {
             List<String> list = new ArrayList<String>();
 
             for (int i = 1; i <= n; i++) {
-                if (i % 3 == 0 && i % 5 != 0) {
+               //More efficient way for testing fizzbuzz.
+                int f = i % 3;
+                int b = i % 5;
+                if (f == 0 && b != 0) {
                    list.add("fizz");
-                } else if (i % 3 != 0 && i % 5 == 0) {
+                } else if (f != 0 && b == 0) {
                     list.add("buzz");
-                } else if (i % 3 == 0 && i % 5 == 0) {
+                } else if (f == 0 && b == 0) {
                    list.add("fizzbuzz");
                 } else {
                     list.add(String.valueOf(i));
                 }
             }
+
+            //Only purpose is to show that the values are getting into the list.
+            System.out.println(list);
+
             return list;
 
         } else {
